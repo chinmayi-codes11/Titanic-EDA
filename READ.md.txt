@@ -1,0 +1,45 @@
+# Titanic-EDA
+Project Overview:
+This project performs a comprehensive exploratory data analysis (EDA) on the Titanic passenger dataset from Kaggle. The main objective is to understand patterns and relationships between passenger attributes (such as age, gender, passenger class, fare) and their survival outcome in the Titanic disaster.
+
+Dataset Description:
+The dataset comprises information on 891 passengers, including demographic data (age, gender), socioeconomic status (passenger class, fare paid), family relationships aboard (siblings/spouses, parents/children), and survival status. It is a widely used dataset for data analysis and predictive modeling exercises.
+
+Data Cleaning and Preparation:
+-Missing values in the Age column are filled with the median age.
+-Missing embarked location values are replaced with the most frequent category.
+-Columns with many missing values or less relevant to survival analysis (such as Cabin) are dropped to streamline the dataset.
+-Data types are reviewed and adjusted as necessary for analysis and visualization.
+
+Exploratory Data Analysis (EDA):
+-Visualized survival counts overall and by gender.
+-Analyzed survival rates by passenger class.
+-Examined age distribution using histograms and box plots split by survival.
+-Generated correlation heatmaps to understand relationships among numerical variables.
+
+Advanced Statistical Testing:
+-Performed Chi-Square tests to examine the dependency between survival and categorical variables like gender.
+-Used T-tests to determine if age differences between survivors and non-survivors are statistically significant.
+
+Advanced Visualizations:
+-Created FacetGrid plots to observe age distributions across survival status and gender.
+-Used pairplots to visualize relationships among numerical features segmented by survival.
+-Violin plots illustrated fare distributions within survivor groups.
+-Heatmaps highlighted missing data patterns.
+
+Key Findings:
+-Females had significantly higher survival rates than males.
+-Passengers in the first class had better chances of survival.
+-Younger passengers were more likely to survive compared to older ones.
+-Fare amounts and family relationships aboard showed correlations with survival outcomes.
+
+Tools and Libraries:
+The project is implemented in Python using pandas for data manipulation, seaborn and matplotlib for visualization, and scipy for statistical testing.
+
+How to Run the Project:
+Execute the Python script titanic_eda.py in a Python environment with required libraries installed (pandas, matplotlib, seaborn, scipy).
+
+Visual outputs will guide through data insights and statistical evidence supporting survival patterns.
+
+For any questions or help, please reach out!
+Happy coding !!
